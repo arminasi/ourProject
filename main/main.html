@@ -9,14 +9,33 @@
 </head>
 <body>
     <div id="navbar">
-        <div id="logo"><a href="#home">Home</a></div>
-        <div id="navbarBox">
-            <a href="#">Lectures</a>
-            <a href="#">Classrooms</a>
-        </div>
+        <div id="logo"><a href="#home">
+            <div class="log"></div>
+            <div class="log" id="logoMediumLine"></div>
+            <div class="log"></div>
+        </a></div>
+        <div id="navbarLeft"><a href="#">Lectures</a></div>
+        <div id="navbarRight"><a href="#">Classrooms</a></div>
       </div>
     <header>
+        <div class="openBtn"></div>
+          <div class="loginPopup">
+            <div class="formPopup" id="popupForm">
+              <form action="/action_page.php" class="formContainer">
+                <h2>Lesson</h2>
+                <label for="email">
+                  <strong>name</strong>
+                </label>
+                <input type="text" placeholder=". . .">
+                </label>
+                <button class="btn" onclick="addItem()">Add lesson</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+            </div>
+          </div>
+          <div id="headerItems"></div>
     </header>
-    <button onclick="addNewItem()" id="myBtn" title="new lesson">Add</button>
+    <div id="addBtn"><button class="openButton" onclick="openForm()" id="myBtn">Add</button></div>
+    <script src="script.js"></script>
 </body>
 </html>
