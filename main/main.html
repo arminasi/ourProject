@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./mainStyle.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./mainStyle.css" />
+  </head>
+  <body>
     <div id="navbar">
-        <div id="logo"><a href="#home">
-            <div class="log"></div>
-            <div class="log" id="logoMediumLine"></div>
-            <div class="log"></div>
-        </a></div>
-        <div id="navbarLeft"><a href="#">Lectures</a></div>
-        <div id="navbarRight"><a href="#">Classrooms</a></div>
+      <div id="logo">
+        <a href="#home">
+          <div class="log"></div>
+          <div class="log" id="logoMediumLine"></div>
+          <div class="log"></div>
+        </a>
       </div>
+      <div id="navbarLeft"><a href="#">Lectures</a></div>
+      <div id="navbarRight"><a href="#">Classrooms</a></div>
+    </div>
     <header>
-        <div class="openBtn"></div>
-          <div class="loginPopup">
-            <div class="formPopup" id="popupForm">
-              <form action="/action_page.php" class="formContainer">
-                <h2>Lesson</h2>
-                <label for="email">
-                  <strong>name</strong>
-                </label>
-                <input type="text" placeholder=". . .">
-                </label>
-                <button class="btn" onclick="addItem()">Add lesson</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-              </form>
-            </div>
+      <div class="openBtn"></div>
+
+
+      <div id="popupForm">
+        <div class="container">
+        
+          <div class="close">
+            <div class="closeButton" onclick="closeForm()"></div>
           </div>
-          <div id="headerItems"></div>
-    </header>
-    <div id="addBtn"><button class="openButton" onclick="openForm()" id="myBtn">Add</button></div>
+  
+          <div class="brand-logo"></div>
+          <div class="brand-title"><u>Add lesson</u></div>
+  
+          <div class="inputs">
+            <label>Choose lesson</label>
+            <input type="text" placeholder="exam Java advanced" />
+            <br />
+            <br />
+  
+            <label>When srted</label>
+            <input type="date" placeholder="Min 6 charaters long" />
+            <!-- <button type="submit">Get offer</button> -->
+          </div>
+          <button class="buttonForm" type="submit">Get offer</button>
+        </div>
+        <div id="headerItems"></div>
+      </header>
+      <div id="addBtn">
+        <button class="openButton" onclick="openForm()" id="myBtn">Add</button>
+      </div>
+      </div>
+      
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
