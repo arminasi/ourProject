@@ -2,7 +2,7 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  background: #ecf0f3;
+  background: black;
   display: flex;
   align-items: center;
   text-align: center;
@@ -19,24 +19,27 @@ body {
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
-  background: #e2e9ec;
+
+  border: 1px solid wheat;
 }
 
 .brand-logo {
   height: 100px;
   width: 100px;
-  background-image: url("./logo.png");
+  background-image: url("./logo.jpg");
+  background-size: contain;
+  background-color: white;
   margin: auto;
   border-radius: 50%;
   box-sizing: border-box;
-  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  box-shadow: 1px 1px 5px #cbced1, -1px -1px 5px white;
 }
 
 .brand-title {
   margin-top: 10px;
   font-weight: 900;
   font-size: 1.8rem;
-  color: rgb(36, 31, 31);
+  color: white;
   letter-spacing: 1px;
 }
 
@@ -51,13 +54,14 @@ button {
   display: block;
   width: 100%;
   padding: 0;
-  border: none;
-  outline: none;
+  border: 1px;
+  outline: 1px;
   box-sizing: border-box;
 }
 
 label {
   margin-bottom: 4px;
+  color: white;
 }
 
 label:nth-of-type(2) {
@@ -85,7 +89,7 @@ button {
   border-radius: 50px;
   cursor: pointer;
   font-weight: 900;
-  box-shadow: 6px 6px 6px #bdbdbd, -6px -6px 6px white;
+  box-shadow: 1px 1px 5px #cbced1, -1px -1px 5px white;
   transition: 0.5s;
   color: white;
 }
@@ -96,8 +100,4 @@ button:hover {
 
 button:hover {
   box-shadow: none;
-}
-
-body {
-  background-color: black;
 }

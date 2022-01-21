@@ -1,89 +1,201 @@
 * {
-    box-sizing: border-box;
-    color: white;
-    background: #000;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  box-sizing: border-box;
+  color: white;
+  background: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .log {
-    margin-top: 10px;
-    width: 40px;
-    height: 2px;
-    background: rgb(214, 214, 214);
+  margin-top: 10px;
+  width: 40px;
+  height: 2px;
+  background: rgb(214, 214, 214);
 }
 
-#logoMediumLine{
-    transform: rotate(-90deg);
+#logoMediumLine {
+  transform: rotate(-90deg);
 }
 
-#logo{
-    transition: 0.6s;
+#logo {
+  transition: 0.6s;
 }
 
 #logo:hover {
-    transform: rotate(-90deg);
-    transition: 0.6s;
+  transform: rotate(-90deg);
+  transition: 0.6s;
 }
 
-
-
 #navbar {
-    display: flex;
-    justify-content: space-around;
-    font-size: 2rem;
-    position: fixed;
-    transition: 0.8s;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  position: fixed;
+  transition: 0.8s;
+  width: 100%;
 }
 
 #navbarBox {
-    padding:0 0px;
+  padding: 0 0px;
 }
 
 .navbar:hover {
-    transition: 0.8s;
+  transition: 0.8s;
 }
 
 a {
-    text-decoration-line: none;
-    transition: 0.6s;
+  text-decoration-line: none;
+  transition: 0.6s;
 }
 
 a:hover {
-    color: rgb(0, 0, 0);
-    text-decoration-line: none;
-    transition: 0.4s;
-    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
-
+  color: rgb(0, 0, 0);
+  text-decoration-line: none;
+  transition: 0.4s;
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255),
+    1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
 }
 
 #myBtn {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: rgb(35, 92, 45);
-    color: white;
-    cursor: pointer;
-    padding: 20px;
-    border-radius: 50px;
-    font-size: 25px;
-    transition: 0.6s;
-  }
-  
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(35, 92, 45);
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 25px;
+  transition: 0.6s;
+}
+
 #myBtn:hover {
-    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
-    color: black;
-    transition: 0.6s;
-    background-color: rgb(253, 145, 22); /* Add a dark-grey background on hover */
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255),
+    1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+  color: black;
+  transition: 0.6s;
+  background-color: rgb(253, 145, 22); /* Add a dark-grey background on hover */
 }
 
 header {
-    height: 1000px;
+  height: 1000px;
 }
-  .loginPopup {
+
+.container {
+  position: absolute;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 100px;
+  box-sizing: border-box;
+  border: 1px solid wheat;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  font-family: poppins;
+}
+#popupForm {
+  display: none;
+}
+
+.close {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+  /* box-sizing: border-box; */
+  position: inherit;
+  top: calc(5% - 10px);
+  right: calc(10% - 25px);
+}
+.closeButton {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: url("../992660.png");
+  background-size: contain;
+}
+
+.brand-logo {
+  height: 100px;
+  width: 100px;
+  background-image: url("../logo.jpg");
+  background-size: contain;
+  background-color: white;
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 5px #cbced1, -1px -1px 5px white;
+}
+
+.brand-title {
+  margin: auto;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.inputs {
+  text-align: left;
+  margin: auto;
+  padding-top: 50px;
+}
+
+label,
+input {
+  margin: auto;
+  width: 100%;
+  padding: 0;
+  border: 1px;
+  outline: 1px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+label {
+  color: white;
+  margin-top: 20px;
+}
+
+input::placeholder {
+  color: black;
+}
+
+input {
+  background: #eff8ff;
+  padding: 10px;
+  padding-left: 12px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 5px 5px 5px #cbced1, inset -6px -6px 6px white;
+}
+
+.buttonForm {
+  margin-top: 50px;
+  background: black;
+  width: 100%;
+  height: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 1px 1px 5px #cbced1, -1px -1px 5px white;
+  transition: 0.5s;
+  color: white;
+}
+button:hover {
+  background-color: silver;
+  color: black;
+}
+
+/* .loginPopup {
     position: relative;
     text-align: center;
     width: 100%;
@@ -147,4 +259,4 @@ header {
   .formContainer .btn:hover,
   .openButton:hover {
     opacity: 1;
-  }
+  } */
