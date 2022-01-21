@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   color: white;
   background: black;
@@ -83,29 +85,31 @@ a:hover {
 }
 
 .aboutText {
-  margin-top: 150px;
-  float: left;
-  margin-left: 80px;
-  max-width: 1300px;
+  max-width: 90%;
+  padding-top: 200px;
+  margin: 0 auto;
 }
 
 .lecturePhoto {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background-image: url("https://oganisyan.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fassets%2Fimg%2Fgeneral%2Favatar.a9a3b7c23e59bcc6772aa215b1066a03.jpg&w=128&q=75");
   background-size: contain;
-  opacity: 1;
-}
-.lecturePhoto:hover {
-  opacity: 0.7;
-  width: 202px;
-  height: 202px;
 }
 
 .aboutText > .lecturePhoto {
   float: left;
   margin-right: 40px;
+}
+
+footer {
+  text-align: center;
+  background-color: #0f1730;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 25px;
 }
 
 /* p{
