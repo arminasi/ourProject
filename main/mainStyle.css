@@ -108,7 +108,7 @@ header {
   width: 30px;
   border-radius: 50%;
   background-color: white;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   position: inherit;
   top: calc(5% - 10px);
   right: calc(10% - 25px);
