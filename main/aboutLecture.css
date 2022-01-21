@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  color: white;
+  background: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.log {
+  margin-top: 10px;
+  width: 40px;
+  height: 2px;
+  background: rgb(214, 214, 214);
+}
+
+#logoMediumLine {
+  transform: rotate(-90deg);
+}
+
+#logo {
+  transition: 0.6s;
+}
+
+#logo:hover {
+  transform: rotate(-90deg);
+  transition: 0.6s;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  position: fixed;
+  transition: 0.8s;
+  width: 100%;
+  border-bottom: 1px white solid;
+  height: 70px;
+}
+
+#navbarBox {
+  padding: 0 0px;
+}
+
+.navbar:hover {
+  transition: 0.8s;
+}
+
+a {
+  text-decoration-line: none;
+  transition: 0.6s;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration-line: none;
+  transition: 0.4s;
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255),
+    1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+}
+
+#myBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(35, 92, 45);
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 25px;
+  transition: 0.6s;
+}
+
+#myBtn:hover {
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255),
+    1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+  color: black;
+  transition: 0.6s;
+  background-color: rgb(253, 145, 22); /* Add a dark-grey background on hover */
+}
+
+.aboutText {
+  margin-top: 150px;
+  float: left;
+  margin-left: 80px;
+  max-width: 1300px;
+}
+
+.lecturePhoto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url("https://oganisyan.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fassets%2Fimg%2Fgeneral%2Favatar.a9a3b7c23e59bcc6772aa215b1066a03.jpg&w=128&q=75");
+  background-size: contain;
+  opacity: 1;
+}
+.lecturePhoto:hover {
+  opacity: 0.7;
+  width: 202px;
+  height: 202px;
+}
+
+.aboutText > .lecturePhoto {
+  float: left;
+  margin-right: 40px;
+}
+
+/* p{
+  animation: 1s svetafor infinite alternate;
+}
+@keyframes svetafor {
+    from{
+      color: saddlebrown;
+    }
+      to{
+        white;
+      }
+    
+} */
