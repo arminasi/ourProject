@@ -1,0 +1,23 @@
+#allCardsField {
+    width: 90%;
+    padding-top: 150px;
+    display: flex;
+    background: auto; /*should be auto*/
+}
+
+.lectureForm {
+    border-radius: 10px;
+    width: 270px;
+    height: 350px;
+    background: rgb(131, 45, 45);
+}
+
+#lastBox {
+    font-size: 60px;
+    text-align: center;
+    line-height: 550%;
+}
+
+#lastBox > h1 {
+    cursor: pointer;
+}
