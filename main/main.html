@@ -21,29 +21,25 @@
     </div>
     <header>
       <div class="openBtn"></div>
-
-
       <div id="popupForm">
         <div class="container">
-        
-          <div class="close">
-            <div class="closeButton" onclick="closeForm()"></div>
-          </div>
   
-          <div class="brand-logo"></div>
-          <div class="brand-title"><u>Add lesson</u></div>
+          <div class="brand-logo">
+              <div class="log"></div>
+              <div class="log" id="logoMediumLine"></div>
+              <div class="log"></div>
+          </div>
   
           <div class="inputs">
             <label>Choose lesson</label>
             <input type="text" placeholder="exam Java advanced" />
             <br />
             <br />
-  
-            <label>When srted</label>
-            <input type="date" placeholder="Min 6 charaters long" />
+            <label>Starting date</label>
+            <input type="date"/>
             <!-- <button type="submit">Get offer</button> -->
           </div>
-          <button class="buttonForm" type="submit">Get offer</button>
+          <button class="buttonForm" type="submit" onclick="setItem()">Add lesson</button>
         </div>
         
         <div id="headerItems"></div>
