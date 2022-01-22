@@ -8,47 +8,50 @@
     <link rel="stylesheet" href="./mainStyle.css" />
   </head>
   <body>
-    <div id="navbar">
-      <div id="logo">
-        <a href="#home">
-          <div class="log"></div>
-          <div class="log" id="logoMediumLine"></div>
-          <div class="log"></div>
-        </a>
-      </div>
-      <div id="navbarLeft"><a href="#">Lectures</a></div>
-      <div id="navbarRight"><a href="#">Classrooms</a></div>
-    </div>
-    <header>
-      <div class="openBtn"></div>
-      <div id="popupForm">
-        <div class="container">
-  
-          <div class="brand-logo">
-              <div class="log"></div>
-              <div class="log" id="logoMediumLine"></div>
-              <div class="log"></div>
-          </div>
-  
-          <div class="inputs">
-            <label>Choose lesson</label>
-            <input type="text" placeholder="exam Java advanced" />
-            <br />
-            <br />
-            <label>Starting date</label>
-            <input type="date"/>
-            <!-- <button type="submit">Get offer</button> -->
-          </div>
-          <button class="buttonForm" type="submit" onclick="setItem()">Add lesson</button>
+    <div id="mod">
+      <div id="navbar">
+        <div id="logo" onclick="changeMod()">
+            <div class="log"></div>
+            <div class="log" id="logoMediumLine"></div>
+            <div class="log"></div>
         </div>
-        
-        <div id="headerItems"></div>
-      </header>
-      <div id="addBtn">
-        <button class="openButton" onclick="openForm()" id="myBtn">Add</button>
+        <div id="navbarLeft"><a href="#">Lectures</a></div>
+        <div id="navbarRight"><a href="#">Classrooms</a></div>
       </div>
-      </div>
-      
+      <header>
+        <div class="openBtn"></div>
+        <div id="popupForm">
+          <div id="container">
+    
+            <div class="brand-logo">
+                <div class="log"></div>
+                <div class="log" id="logoMediumLine"></div>
+                <div class="log"></div>
+            </div>
+    
+            <div class="inputs">
+              <label>Choose lesson</label>
+              <input type="text" placeholder="exam Java advanced" />
+              <br>
+              <br>
+              <br>
+              <label>Starting date</label>
+              <input type="date"/>
+              <!-- <button type="submit">Get offer</button> -->
+            </div>
+            <button class="buttonForm" type="submit" onclick="setItem()">Add lesson</button>
+          </div>
+          
+          <div id="headerItems"></div>
+        </header>
+        <div id="addBtn">
+          <button class="openButton" onclick="openForm()" id="myBtn">Add</button>
+        </div>
+        </div>
+    </div>
+      <footer>
+        © 2016 – 2022 Armenian Code Academy: Բոլոր իրավունքները պաշտպանված են։
+      </footer>
     <script src="script.js"></script>
   </body>
 </html>
