@@ -1,24 +1,17 @@
 function openForm() {
-  document.getElementById("popupForm").style.display = "block";
+  if(document.getElementById("popupForm").style.display === "block") {
+    document.getElementById("popupForm").style.display = "none";
+    document.getElementById("myBtn").innerHTML = "Add";
+  } else {
+    document.getElementById("popupForm").style.display = "block";
+    document.getElementById("myBtn").innerHTML = "Close";
+  }
 }
 
-function closeForm() {
-  document.getElementById("popupForm").style.display = "none";
-}
-
-var bookStyles = {
-  color: "red",
-  backgroundColor: "blue",
-  height: "300px",
-  width: "200px",
-};
-
-for (let style in bookStyles) {
-  div.style[style] = bookStyles[style];
-}
-
-body.appendChild(div);
-
-function addItem() {
-  document.createElement("div");
+function changeMod() {
+  let form = document.getElementById("container");
+  let element = document.body;
+  element.classList.toggle("dark-mode");
+  form.style.background = "black";
+  form.style.color = "white";
 }

@@ -60,7 +60,7 @@ aside {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  opacity: 1;
+  opacity: 2;
 }
 .lecturer:hover {
   opacity: 0.7;
