@@ -6,3 +6,4 @@ class Timetable {
     this.time = time;
   }
 }
+
