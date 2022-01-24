@@ -8,51 +8,49 @@
     <link rel="stylesheet" href="./mainStyle.css" />
   </head>
   <body>
-    <div id="navbar">
-      <div id="logo">
-        <a href="#home">
-          <div class="log"></div>
-          <div class="log" id="logoMediumLine"></div>
-          <div class="log"></div>
-        </a>
-      </div>
-      <div id="navbarLeft"><a href="#">Lectures</a></div>
-      <div id="navbarRight"><a href="#">Classrooms</a></div>
-    </div>
-    <header>
-      <div class="openBtn"></div>
-
-
-      <div id="popupForm">
-        <div class="container">
-        
-          <div class="close">
-            <div class="closeButton" onclick="closeForm()"></div>
-          </div>
-  
-          <div class="brand-logo"></div>
-          <div class="brand-title"><u>Add lesson</u></div>
-  
-          <div class="inputs">
-            <label>Choose lesson</label>
-            <input type="text" placeholder="exam Java advanced" />
-            <br />
-            <br />
-  
-            <label>When srted</label>
-            <input type="date" placeholder="Min 6 charaters long" />
-            <!-- <button type="submit">Get offer</button> -->
-          </div>
-          <button class="buttonForm" type="submit">Get offer</button>
+    <div id="mod">
+      <div id="navbar">
+        <div id="logo" onclick="changeMod()">
+            <div class="log" id="logoMediumLine">
+              <div id="logMoon"></div>
+            </div>
         </div>
-        
-        <div id="headerItems"></div>
-      </header>
-      <div id="addBtn">
-        <button class="openButton" onclick="openForm()" id="myBtn">Add</button>
+        <div id="navbarLeft"><a href="../Third_Page/aboutLecture.html">Lectures</a></div>
+        <div id="navbarRight"><a href="#">Classrooms</a></div>
       </div>
-      </div>
-      
+      <header>
+        <div class="openBtn"></div>
+        <div id="popupForm">
+          <div id="container">
+    
+            <div class="brand-logo">
+                <div class="log"></div>
+                <div class="log" id="logoMediumLine"></div>
+                <div class="log"></div>
+            </div>
+    
+            <div class="inputs">
+              <label>Choose lesson</label>
+              <input type="text" placeholder="JavaScript" />
+              <br>
+              <br>
+              <br>
+              <label>Starting date</label>
+              <input type="date"/>
+            </div>
+            <button class="buttonForm" type="submit" onclick="setItem()">Add lesson</button>
+          </div>
+          
+          <div id="headerItems"></div>
+        </header>
+        <div id="addBtn">
+          <button class="openButton" onclick="openForm()" id="myBtn">Add</button>
+        </div>
+        </div>
+    </div>
+      <footer>
+        <h5>© 2016 – 2022 Armenian Code Academy. All rights reserved</h5>
+      </footer>
     <script src="script.js"></script>
   </body>
 </html>
