@@ -5,8 +5,5 @@ class Lecturer {
   }
 }
 
-function ( name subject_id){
-  return new Lecturer 
-}
 
-function()
+
