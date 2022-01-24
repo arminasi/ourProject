@@ -4,3 +4,9 @@ class Lecturer {
     this.subject_id = subject_id;
   }
 }
+
+function ( name subject_id){
+  return new Lecturer 
+}
+
+function()

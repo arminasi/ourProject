@@ -4,4 +4,7 @@ class Lesson {
     this.subject_id = subject_id;
     this.students = students;
   }
+  
 }
+
+

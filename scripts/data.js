@@ -9,6 +9,7 @@ const classrooms = [
   new Classroom(2, 22),
   new Classroom(3, 33),
   new Classroom(4, 44),
+
 ];
 
 const lecturers = [
