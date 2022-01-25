@@ -26,7 +26,7 @@ body {
 .brand-logo {
   height: 100px;
   width: 100px;
-  background-image: url("./logo.jpg");
+  background-image: url("./confirm/logo.jpg");
   background-size: contain;
   background-color: white;
   margin: auto;

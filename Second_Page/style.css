@@ -9,7 +9,7 @@ section {
   display: flex;
   justify-content: space-between;
   color: white;
-  margin: 50px 0;
+  margin: 50px 100px;;
 }
 .students {
   background-color: #0f1730;
@@ -43,7 +43,9 @@ aside {
   overflow: auto;
 }
 .list {
-  margin-bottom: 10px;
+  margin: 10px;
+  font-size: 20px;
+  font-style: italic;
 }
 .info {
   width: 400px;
