@@ -6,42 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./mainStyle.css" />
+    <link rel="stylesheet" href="./logo.css">
+    <link rel="stylesheet" href="./leftLinks.css">
+    <link rel="stylesheet" href="todo.css">
   </head>
   <body>
     <div id="mod">
       <div id="navbar">
-        <div id="logo" onclick="changeMod()">
+          <div id="logo" onclick="changeMod()">
             <div class="log" id="logoMediumLine">
               <div id="logMoon"></div>
             </div>
-        </div>
-        <div id="navbarLeft"><a href="../Third_Page/aboutLecture.html">Lectures</a></div>
+          </div>
+          <div class="parent">
+            <div id="child1"></div>
+            <div id="child2"></div>
+            <div id="child3"></div>
+            <div id="child4"></div>
+          </div>
+        <div id="navbarLeft"><a href="/Third_Page/about_Lecture.html">Lectures</a></div>
         <div id="navbarRight"><a href="#">Classrooms</a></div>
       </div>
       <header>
+        <div id="leftLinks">
+          <div id="youtube"></div>
+          <div id="discord"></div>
+          <div id="slack"></div>
+        </div>
+        <div class="lessonsContainerParent">
+          <div class="lessonsContainer">
+              <div class="lessonPattern">
+                  <div class="lecturer">
+                      <div class="lecturerPhoto"></div>
+                      <div class="lecturerInfo">
+                          <p>JavaScript</p>
+                      </div>
+                  </div>
+              </div>
+            </div>   
+            <div class="lessonsContainer">
+              <div class="lessonPattern">
+                  <div class="lecturer">
+                      <div class="lecturerPhoto"></div>
+                      <div class="lecturerInfo">
+                          <p>JavaScript</p>
+                      </div>
+                  </div>
+              </div>
+            </div>  
+            <div class="lessonsContainer">
+              <div class="lessonPattern">
+                  <div class="lecturer">
+                      <div class="lecturerPhoto"></div>
+                      <div class="lecturerInfo">
+                          <p>JavaScript</p>
+                      </div>
+                  </div>
+              </div>
+            </div>  
+            <div class="lessonsContainer">
+              <div class="lessonPattern">
+                  <div class="lecturer">
+                      <div class="lecturerPhoto"></div>
+                      <div class="lecturerInfo">
+                          <p>JavaScript</p>
+                      </div>
+                  </div>
+              </div>
+            </div>  
+            <div class="lessonsContainer">
+              <div class="lessonPattern">
+                  <div class="lecturer">
+                      <div class="lecturerPhoto"></div>
+                      <div class="lecturerInfo">
+                          <p>JavaScript</p>
+                      </div>
+                  </div>
+              </div>
+            </div>  
+        </div>
         <div class="openBtn"></div>
         <div id="popupForm">
           <div id="container">
-    
-            <div class="brand-logo">
-                <div class="log"></div>
-                <div class="log" id="logoMediumLine"></div>
-                <div class="log"></div>
-            </div>
-    
             <div class="inputs">
               <label>Choose lesson</label>
+              <br>
               <input type="text" placeholder="JavaScript" />
-              <br>
-              <br>
-              <br>
               <label>Starting date</label>
+              <br>
               <input type="date"/>
             </div>
             <button class="buttonForm" type="submit" onclick="setItem()">Add lesson</button>
           </div>
-          
-          <div id="headerItems"></div>
         </header>
         <div id="addBtn">
           <button class="openButton" onclick="openForm()" id="myBtn">Add</button>

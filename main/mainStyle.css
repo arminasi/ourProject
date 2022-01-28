@@ -1,5 +1,5 @@
 * {
-  margin: auto;
+  margin: 0;
   padding: auto;
 }
 
@@ -17,20 +17,23 @@ body {
 }
 
 .log {
-  margin-top: 15px;
+  margin-top: 10px;
   width: 40px;
   height: 2px;
   background: rgb(214, 214, 214);
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 #logoMediumLine {
   transform: rotate(-90deg);
 }
 
-#logo {
+#logo {position: absolute;
   cursor: pointer;
   transition: 0.6s;
+  right: 0;
+  margin-right: 40px;
+  top: 0;
 }
 
 #logo:hover {
@@ -61,13 +64,15 @@ body {
 #navbar {
   background: #000;
   margin: auto;
-  padding: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-around;
   font-size: 2rem;
   position: fixed;
   transition: 0.8s;
   width: 100%;
+  box-shadow: 1px 1px #888888;
 }
 
 #navbarBox {
@@ -120,16 +125,12 @@ a:hover {
   background-color: rgb(253, 145, 22);
 }
 
-header {
-  height: 1000px;
-}
-
 #container {
   position: fixed;
   width: 300px;
-  height: 400px;
+  height: 380px;
   border-radius: 20px;
-  bottom: 135px;
+  bottom: 170px;
   padding: 30px;
   margin-right: 75px;
   box-sizing: border-box;
@@ -165,23 +166,13 @@ header {
 }
 
 .inputs {
-  text-align: left;
-  margin: auto;
-  padding-top: 20px;
-}
-
-label,
-input {
-  margin: auto;
-  width: 100%;
-  border: 1px;
-  outline: 1px;
-  box-sizing: border-box;
-  margin-top: 10px;
-}
-
-.inputs {
   text-align: center;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
 }
 
 input {
@@ -193,12 +184,16 @@ input {
   box-shadow: inset 5px 5px 5px #cbced1, inset -6px -6px 6px white;
 }
 
+input:focus {
+  outline: none;
+}
+
 .buttonForm {
   border: none;
-  margin-top: 52px;
+  margin-top: 35px;
   background-color: rgb(35, 92, 45);
   width: 35%;
-  height: 40px;
+  height: 50px;
   border-radius: 25px;
   cursor: pointer;
   font-weight: 600;
@@ -209,13 +204,18 @@ input {
 button:hover {
   background-color: rgb(253, 145, 22);
   color: black;
+  
 }
 
-footer{
-  display: table;
+footer {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 150px;
-  margin-bottom: 50px;
+  background-color: black;
+  border-top: 0.5px solid white;
+  border-bottom: 0.5px solid white;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+ 
+
 }
