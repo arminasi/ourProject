@@ -5,3 +5,7 @@ function changeMod() {
     form.style.background = "black";
     form.style.color = "white";
   }
+
+
+
+  
