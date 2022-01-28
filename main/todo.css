@@ -8,18 +8,26 @@ body{
 }
 
 .lessonsContainerParent{
-    margin: 0 auto;
-    padding: 60px;
+    margin: 0 0px;
+    padding: 90px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 50%
+    width: 80%;
+  
+}
+
+.lessonPattern:hover{
+    transform:perspective(800px)       rotateY(0deg);
+  opacity:1;
 }
 
 .lessonsContainer {
     flex-grow: 0;
     margin: 30px 0 0 30px;
+    display:grid;
+  place-items:center;
     
 }
 /* .lessonsContainer:hover{
@@ -31,9 +39,16 @@ body{
 .lessonPattern {
     width: 220px;
     height: 280px;
-    background: rgb(0, 0, 0);
+    background: rgb(126, 133, 163);
     border-radius: 20px;
     border: 1px solid white;
+    object-fit:cover;
+    border: none;
+  -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+  
+  transform-origin:center;
+  transform:perspective(800px) rotateY(25deg);
+  transition:0.1s;
 }
 
 .lecturer {
@@ -61,17 +76,15 @@ body{
     background: rgb(247, 230, 230);
     border-radius: 20px;
     padding: 10px 0;
+    border: none;
 }
 
 .lecturerInfo:hover{ 
         transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-        transform: scale(1.05);
-        /* box-shadow: 1px 3px #888888; */
         cursor: pointer;
   transition: 0.4s;
   color: white;
-    background-color: rgb(35, 92, 45);
-
-    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    background-color: black;
+    box-shadow: 0 0.5em 0.5em -0.4em white;
   transform: translateY(-0.25em);
 }
