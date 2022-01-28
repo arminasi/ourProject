@@ -124,16 +124,12 @@ a:hover {
   background-color: rgb(253, 145, 22);
 }
 
-header {
-  height: 1000px;
-}
-
 #container {
   position: fixed;
   width: 300px;
   height: 380px;
   border-radius: 20px;
-  bottom: 135px;
+  bottom: 170px;
   padding: 30px;
   margin-right: 75px;
   box-sizing: border-box;
