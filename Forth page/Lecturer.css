@@ -1,0 +1,186 @@
+
+
+
+
+.maincontainer{
+    padding-top: 100px;
+   
+}
+.containtext{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #444;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  
+
+
+  .cards{
+        width: 90%;
+        margin: 0 auto;
+        max-width: 80rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+  }
+  
+  .cols{
+      padding-top: 70px;
+    
+  }
+  
+  .col{
+    width: 400px;
+    cursor: pointer;
+    
+  }
+  
+  .container{
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+      -webkit-perspective: 800px;
+              perspective: 800px;
+  }
+  .front{
+      width: 80%;
+  }
+  
+  .front,
+  .back{
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+    border-radius: 10px;
+      background-position: center;
+      -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      text-align: center;
+      min-height: 280px;
+      height: auto;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1.5rem;
+  }
+  
+  .back{
+    background: rgb(126, 133, 163)
+  }
+  
+  .front:after{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 80%;
+      height: 100%;
+      content: '';
+      display: block;
+      opacity: 0.1;
+      background-color: #000;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      border-radius: 10px;
+  }
+  .container:hover .front,
+  .container:hover .back{
+      -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  }
+  
+  .back{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80%;
+  }
+  
+  .inner{
+      -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+              transform: translateY(-50%) translateZ(60px) scale(0.94);
+      top: 70%;
+      
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 2rem;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      outline: 1px solid transparent;
+      -webkit-perspective: inherit;
+              perspective: inherit;
+      z-index: 2;
+  }
+  
+  .container .back{
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+  }
+  
+  .container .front{
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg);
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+  }
+  
+  .container:hover .back{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  
+  .container:hover .front{
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  
+  .front .inner p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .front .inner p:after{
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+  }
+  
+  .front .inner span{
+    color: rgba(255,255,255,0.7);
+    font-family: 'Montserrat';
+    font-weight: 300;
+  }
+  
+ 
