@@ -35,108 +35,19 @@
           <div id="discord"></div>
           <div id="slack"></div>
         </div>
-        <div class="lessonsContainerParent">
+        <div id="lessonsContainerParent">
           <div class="lessonsContainer">
               <div class="lessonPattern">
                   <div class="lecturer">
                       <div class="lecturerPhoto"></div>
-                      <a href="../Second_Page/index.html"><div class="lecturerInfo">
-                        <p>JavaScript</p>
-                    </div></a>
-                      
+                        <div class="lecturerInfo">
+                          <p class="lecturerInfoText">
+                            <a class="lecturerInfoTextLink" href="../Second_Page/index.html">JavaScript</a>
+                          </p>
+                        </div>
                   </div>
               </div>
-            </div>   
-            <div class="lessonsContainer">
-              <div class="lessonPattern">
-                  <div class="lecturer">
-                      <div class="lecturerPhoto"></div>
-                      <div class="lecturerInfo">
-                          <p>JavaScript</p>
-                      </div>
-                  </div>
-              </div>
-            </div>  
-            <div class="lessonsContainer">
-              <div class="lessonPattern">
-                  <div class="lecturer">
-                      <div class="lecturerPhoto"></div>
-                      <div class="lecturerInfo">
-                          <p>JavaScript</p>
-                      </div>
-                  </div>
-              </div>
-            </div>  
-            <div class="lessonsContainer">
-              <div class="lessonPattern">
-                  <div class="lecturer">
-                      <div class="lecturerPhoto"></div>
-                      <div class="lecturerInfo">
-                          <p>JavaScript</p>
-                      </div>
-                  </div>
-              </div>
-            </div> 
-            <div class="lessonsContainer">
-              <div class="lessonPattern">
-                  <div class="lecturer">
-                      <div class="lecturerPhoto"></div>
-                      <div class="lecturerInfo">
-                          <p>JavaScript</p>
-                      </div>
-                  </div>
-              </div>
-            </div> 
-            <div class="lessonsContainer">
-              <div class="lessonPattern">
-                  <div class="lecturer">
-                      <div class="lecturerPhoto"></div>
-                      <div class="lecturerInfo">
-                          <p>JavaScript</p>
-                      </div>
-                  </div>
-              </div>
-            </div> 
-            <div class="lessonsContainer">
-              <div class="lessonPattern">
-                  <div class="lecturer">
-                      <div class="lecturerPhoto"></div>
-                      <div class="lecturerInfo">
-                          <p>JavaScript</p>
-                      </div>
-                  </div>
-              </div>
-            </div> 
-            <div class="lessonsContainer">
-              <div class="lessonPattern">
-                  <div class="lecturer">
-                      <div class="lecturerPhoto"></div>
-                      <div class="lecturerInfo">
-                          <p>JavaScript</p>
-                      </div>
-                  </div>
-              </div>
-            </div> 
-            <div class="lessonsContainer">
-              <div class="lessonPattern">
-                  <div class="lecturer">
-                      <div class="lecturerPhoto"></div>
-                      <div class="lecturerInfo">
-                          <p>JavaScript</p>
-                      </div>
-                  </div>
-              </div>
-            </div>  
-            <div class="lessonsContainer">
-              <div class="lessonPattern">
-                  <div class="lecturer">
-                      <div class="lecturerPhoto"></div>
-                      <div class="lecturerInfo">
-                          <p>JavaScript</p>
-                      </div>
-                  </div>
-              </div>
-            </div>  
+            </div>
         </div>
         <div class="openBtn"></div>
         <div id="popupForm">
@@ -144,12 +55,12 @@
             <div class="inputs">
               <label>Choose lesson</label>
               <br>
-              <input type="text" placeholder="JavaScript" />
+              <input type="text" placeholder="JavaScript" id="inputValue"/>
               <label>Starting date</label>
               <br>
               <input type="date"/>
             </div>
-            <button class="buttonForm" type="submit" onclick="setItem()">Add lesson</button>
+            <button id="buttonForm" type="submit">Add lesson</button>
           </div>
         </header>
         <div id="addBtn">
