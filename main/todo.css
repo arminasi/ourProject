@@ -7,39 +7,31 @@ body{
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.lessonsContainerParent{
-    margin: 0 0px;
+#lessonsContainerParent{
     padding: 90px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
+    width: 75%;
   
 }
 
 .lessonPattern:hover{
-    transform:perspective(800px)       rotateY(0deg);
-  opacity:1;
+  transform:perspective(800px);
 }
 
 .lessonsContainer {
     flex-grow: 0;
     margin: 30px 0 0 30px;
     display:grid;
-  place-items:center;
-    
+    place-items:center;
 }
-/* .lessonsContainer:hover{
-    
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-    transform: scale(1.05);
-} */
 
 .lessonPattern {
     width: 220px;
     height: 280px;
-    background: rgb(126, 133, 163);
+    background: rgb(97, 115, 192);
     border-radius: 20px;
     border: 1px solid white;
     object-fit:cover;
@@ -73,18 +65,18 @@ body{
     margin-top: 80px;
     display: inline-block;
     width: 60%;
-    background: rgb(247, 230, 230);
+    background: rgb(0, 0, 0);
     border-radius: 20px;
     padding: 10px 0;
     border: none;
 }
 
 .lecturerInfo:hover{ 
-        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-        cursor: pointer;
-  transition: 0.4s;
-  color: white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+    transition: 0.4s;
+    color: white;
     background-color: black;
     box-shadow: 0 0.5em 0.5em -0.4em white;
-  transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
 }
